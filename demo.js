@@ -1,7 +1,12 @@
-function box(){
-    var age = 100
-    return function(){
-        return age
+function foo() {
+    var a = 2
+    function baz() {
+        console.log(a)
     }
+    bar(baz)
 }
-console.log(box()())
+
+function bar(fn) {
+    fn()
+}
+foo()
