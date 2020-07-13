@@ -274,7 +274,7 @@ var person2 = new Person("Greg", 27, "Doctor");
      
      6. 调用构造函数创建一个新实例,实例的内部将包含一个指针(__proto__),指向构造函数的原型对象(本例为:Person.prototype)
      
-     7. <img src="./img/proto_pic.png" alt="原型对象图" style="zoom:200%;" />
+     7. <img src="./img/proto_pic.png" alt="原型对象图" style="zoom:100%;" />
      
      8. 构造函数`Person`的属性prototype指向构造函数的原型对象`Person.prototype的输出是一个{constructor:ƒ Person(name, age, job),...}`,这个是构造函数的原型对象，`原型对象`的属性`constructor`又指回了`Person`,原型对象上也可以添加其他属性，(继承就出自这里)。Person构造函数的实例`person1 & person2`的__proto__属性指向构造函数的原型对象(`{constructor:ƒ Person(name, age, job),...}`)!!!!!!!!!!!
      
