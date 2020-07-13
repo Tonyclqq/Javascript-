@@ -1,15 +1,22 @@
-class Student {
+class Animale {
     //构造函数内写属性
-    constructor(){
-
+    constructor(type){
+        this.type = type
     }
-    //原型方法
+    //构造函数外写方法
     eat(){
-        Student.walk()
-        console.log('I\'m eadting');
+        Animale.walk()
+        console.log('i am eat food');
     }
-    //静态方法
-    static walk(){ 
-        console.log('I\'m working');
+    //Es6的静态方法实现
+    static walk(){
+        console.log(`I'm walking`);
     }
 }
+//es6继承
+class Dog extends Animal {
+    constructor(type){
+        this.age = 2
+    }
+} 
+let dog = new Dog('dog')
